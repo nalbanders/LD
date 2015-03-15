@@ -1,0 +1,38 @@
+	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nalband.ribbit.MainActivity$PlaceholderFragment" >
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminate="false"
+        android:max="60"
+        android:progress="10"
+        android:progressDrawable="@drawable/progressbar2" />
+
+<!--     <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminate="false"
+        android:max="60"
+        android:progress="10"
+        android:progressDrawable="@drawable/progressbar2" /> -->
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="226dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="33%" />
+    </RelativeLayout>
+
+</FrameLayout>

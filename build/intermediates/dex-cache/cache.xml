@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-440231aa00ae50ca4d92c65f04d32d25c6ca0652.jar"
+        jar="C:\Users\MBAUser\AppData\Local\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e"/>
+    <item
+        dex="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\pre-dexed\debug\picasso-2.3.3-a8840140b7baa6cd9f8f17f8fb893d66fdcd2712.jar"
+        jar="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\libs\picasso-2.3.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1262995965440e28ba5c4d480c9c9ab4ccce84cc"/>
+    <item
+        dex="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\pre-dexed\debug\Parse-1.5.1-18d42deeccb78237bb8d48aed50b58aa421ef5c7.jar"
+        jar="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\libs\Parse-1.5.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3d645417e7780d44f32e29a3ec6b729b75aef26c"/>
+    <item
+        dex="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\pre-dexed\debug\classes-56b19ed5db31abbdc6dec76dfd231d91f9506159.jar"
+        jar="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\exploded-aar\com.facebook.android\facebook\3.23.1\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="91d1c009153ef7928f83453059cc5494b87e5510"/>
+    <item
+        dex="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\pre-dexed\debug\android-support-v13-e04036df5af7cc6b1a6289735049f3dd22dd99be.jar"
+        jar="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\libs\android-support-v13.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="46ecfc3f4e3993da05395b2bf11f3820e77d4831"/>
+    <item
+        dex="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-378f546a6cec1e99771c9700a38d80e2c1e9937a.jar"
+        jar="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
+    <item
+        dex="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\pre-dexed\debug\classes-e9e16bdd45844331d7a5ccd52ca7c491f8de73ee.jar"
+        jar="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
+    <item
+        dex="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-009552cdf3b4eb2630db1ef0fe3da46b2260585a.jar"
+        jar="C:\Users\MBAUser\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="129874135e6081269ace2312092031558865de12"/>
+    <item
+        dex="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\build\intermediates\pre-dexed\debug\commons-io-2.4-6e04afb999d5dd3fac86116ad562f16ef3ce4ea6.jar"
+        jar="C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn\ribbit\libs\commons-io-2.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad"/>
+
+</pre-dex-items>

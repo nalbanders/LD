@@ -1,0 +1,1404 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+C:\Users\MBAUser\Google Drive\Android\PeapsAndroid\Ribbit_svn
+                       -                                     
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From FacebookSDK:
+* build.gradle
+* build.xml
+From Ribbit:
+* GooglePlay\
+* GooglePlay\Ribbit_svn.apk
+* GooglePlay\desktop.ini
+* Ribbit_svnPre\
+* Ribbit_svnPre\.classpath
+* Ribbit_svnPre\.project
+* Ribbit_svnPre\AndroidManifest.xml
+* Ribbit_svnPre\assets\
+* Ribbit_svnPre\assets\desktop.ini
+* Ribbit_svnPre\bin\
+* Ribbit_svnPre\bin\AndroidManifest.xml
+* Ribbit_svnPre\bin\R.txt
+* Ribbit_svnPre\bin\Ribbit.apk
+* Ribbit_svnPre\bin\Ribbit_svn.apk
+* Ribbit_svnPre\bin\classes.dex
+* Ribbit_svnPre\bin\classes\
+* Ribbit_svnPre\bin\classes\com\
+* Ribbit_svnPre\bin\classes\com\desktop.ini
+* Ribbit_svnPre\bin\classes\com\facebook\
+* Ribbit_svnPre\bin\classes\com\facebook\android\
+* Ribbit_svnPre\bin\classes\com\facebook\android\R$attr.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\R$color.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\R$dimen.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\R$drawable.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\R$id.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\R$layout.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\R$string.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\R$style.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\R$styleable.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\R.class
+* Ribbit_svnPre\bin\classes\com\facebook\android\desktop.ini
+* Ribbit_svnPre\bin\classes\com\facebook\desktop.ini
+* Ribbit_svnPre\bin\classes\com\nalband\
+* Ribbit_svnPre\bin\classes\com\nalband\desktop.ini
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\BuildConfig.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\Manifest$permission.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\Manifest.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$array.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$attr.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$color.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$dimen.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$drawable.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$id.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$layout.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$menu.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$string.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$style.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$styleable.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\R.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\RibbitApplication.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\UserDetailsActivity$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\UserDetailsActivity$2.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\UserDetailsActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\MessageAdapter$ViewHolder.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\MessageAdapter.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\SectionsPagerAdapter.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\desktop.ini
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\desktop.ini
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\EditFriendsActivity$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\EditFriendsActivity$2.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\EditFriendsActivity$3.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\EditFriendsActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\FriendsFragment$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\FriendsFragment.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\InboxFragment$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\InboxFragment.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity$2.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity$3.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity$4.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity$2$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity$2.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity$PlaceholderFragment.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\MainActivity$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\MainActivity$2.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\MainActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$2.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$3$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$3.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$4.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$PlaceholderFragment.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NotificaitonViewActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\PeapsFragment$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\PeapsFragment.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\RecipientsActivity$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\RecipientsActivity$2.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\RecipientsActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\SignupActivity$1$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\SignupActivity$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\SignupActivity$PlaceholderFragment.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\SignupActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\ViewImageActivity$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\ViewImageActivity.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\desktop.ini
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\AlarmReceiver.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\NotificationActionReceiver$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\NotificationActionReceiver.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHider$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHider$OnVisibilityChangeListener.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHider.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHiderBase.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHiderHoneycomb$1.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHiderHoneycomb.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\desktop.ini
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\FileHelper.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\GlobalConstants.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\ImageResizer.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\ParseConstants.class
+* Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\desktop.ini
+* Ribbit_svnPre\bin\classes\desktop.ini
+* Ribbit_svnPre\bin\desktop.ini
+* Ribbit_svnPre\bin\dexedLibs\
+* Ribbit_svnPre\bin\dexedLibs\Parse-1.5.1-5b0d7b9b5d15f6c25976afe460ab7477.jar
+* Ribbit_svnPre\bin\dexedLibs\Parse-1.5.1-99f39b0fe6c785714ed9a1dd5e0485e6.jar
+* Ribbit_svnPre\bin\dexedLibs\android-support-v13-0a7537ecdddbe8089b12d0e6f6648fbe.jar
+* Ribbit_svnPre\bin\dexedLibs\android-support-v13-48f57bb956e7b27d7ef94fe7be111a6e.jar
+* Ribbit_svnPre\bin\dexedLibs\bolts-android-1.1.2-1ae40bad93adbd8ee81389c1f52ab259.jar
+* Ribbit_svnPre\bin\dexedLibs\commons-io-2.4-493916836e62d60e27ffe2d798098c01.jar
+* Ribbit_svnPre\bin\dexedLibs\commons-io-2.4-bab76b57ff843bbd74e6274368a5cb83.jar
+* Ribbit_svnPre\bin\dexedLibs\desktop.ini
+* Ribbit_svnPre\bin\dexedLibs\facebooksdk-7296baf95ca4aae262041f9e1349cce0.jar
+* Ribbit_svnPre\bin\dexedLibs\picasso-2.3.3-05ac5a944010464e06bc118327b77cc5.jar
+* Ribbit_svnPre\bin\dexedLibs\picasso-2.3.3-467c71115abcbe75f53e11be2ae76245.jar
+* Ribbit_svnPre\bin\jarlist.cache
+* Ribbit_svnPre\bin\res\
+* Ribbit_svnPre\bin\res\crunch\
+* Ribbit_svnPre\bin\res\crunch\desktop.ini
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_disabled_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_normal_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_pressed_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_activated_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_default_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_disabled_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\avatar_empty.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\avatar_selected.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\background.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\background_fill.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\desktop.ini
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_action_camera.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_action_picture.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_action_play_over_video.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_action_send_now.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_launcher.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_menu_camera.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_menu_overflow.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_menu_send.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_picture.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_stat_notification_icon.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_stat_trophy_fill_512.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_stat_unlike_512.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_tab_friends.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_tab_inbox.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_video.png
+* Ribbit_svnPre\bin\res\crunch\drawable-hdpi\p_splash.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_disabled_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_normal_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_pressed_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_activated_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_default_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_disabled_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\avatar_empty.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\avatar_selected.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\background.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\background_fill.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\desktop.ini
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_action_camera.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_action_picture.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_action_play_over_video.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_action_send_now.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_launcher.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_menu_camera.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_menu_overflow.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_menu_send.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_picture.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_stat_notification_icon.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_stat_trophy_fill_512.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_stat_unlike_512.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_tab_friends.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_tab_inbox.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_video.png
+* Ribbit_svnPre\bin\res\crunch\drawable-mdpi\p_splash.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_disabled_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_normal_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_pressed_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_activated_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_default_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_disabled_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\avatar_empty.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\avatar_selected.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\background.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\background_fill.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\desktop.ini
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_action_camera.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_action_picture.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_action_play_over_video.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_action_send_now.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_launcher.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_menu_camera.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_menu_overflow.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_menu_send.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_picture.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_stat_notification_icon.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_stat_trophy_fill_512.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_stat_unlike_512.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_tab_friends.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_tab_inbox.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_video.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\p_splash.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_disabled_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_normal_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_pressed_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_activated_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_default_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_disabled_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_focused_holo_light.9.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\avatar_empty.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\avatar_selected.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\background.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\background_fill.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\desktop.ini
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_launcher.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_menu_camera.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_menu_overflow.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_menu_send.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_picture.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_stat_notification_icon.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_stat_trophy_fill_512.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_stat_unlike_512.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_tab_friends.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_tab_inbox.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_video.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\avatar_empty.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\avatar_selected.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\background.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\background_fill.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\desktop.ini
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_launcher.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_menu_camera.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_menu_overflow.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_menu_send.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_picture.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_tab_friends.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_tab_inbox.png
+* Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_video.png
+* Ribbit_svnPre\bin\res\crunch\drawable\
+* Ribbit_svnPre\bin\res\crunch\drawable\desktop.ini
+* Ribbit_svnPre\bin\res\crunch\drawable\login_button_focused.png
+* Ribbit_svnPre\bin\res\crunch\drawable\login_button_normal.png
+* Ribbit_svnPre\bin\res\crunch\drawable\login_button_pressed.png
+* Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_black.png
+* Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_scaled_black.png
+* Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_scaled_white.png
+* Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_white.png
+* Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_white2.png
+* Ribbit_svnPre\bin\res\desktop.ini
+* Ribbit_svnPre\bin\resources.ap_
+* Ribbit_svnPre\branches\
+* Ribbit_svnPre\branches\desktop.ini
+* Ribbit_svnPre\desktop.ini
+* Ribbit_svnPre\gen\
+* Ribbit_svnPre\gen\com\
+* Ribbit_svnPre\gen\com\desktop.ini
+* Ribbit_svnPre\gen\com\facebook\
+* Ribbit_svnPre\gen\com\facebook\android\
+* Ribbit_svnPre\gen\com\facebook\android\R.java
+* Ribbit_svnPre\gen\com\facebook\android\desktop.ini
+* Ribbit_svnPre\gen\com\facebook\desktop.ini
+* Ribbit_svnPre\gen\com\nalband\
+* Ribbit_svnPre\gen\com\nalband\desktop.ini
+* Ribbit_svnPre\gen\com\nalband\ribbit\
+* Ribbit_svnPre\gen\com\nalband\ribbit\BuildConfig.java
+* Ribbit_svnPre\gen\com\nalband\ribbit\Manifest.java
+* Ribbit_svnPre\gen\com\nalband\ribbit\R.java
+* Ribbit_svnPre\gen\com\nalband\ribbit\desktop.ini
+* Ribbit_svnPre\gen\desktop.ini
+* Ribbit_svnPre\libs\
+* Ribbit_svnPre\libs\Parse-1.5.1.jar
+* Ribbit_svnPre\libs\android-support-v13.jar
+* Ribbit_svnPre\libs\android-support-v4.jar
+* Ribbit_svnPre\libs\commons-io-2.4.jar
+* Ribbit_svnPre\libs\desktop.ini
+* Ribbit_svnPre\libs\picasso-2.3.3.jar
+* Ribbit_svnPre\proguard-project.txt
+* Ribbit_svnPre\project.properties
+* Ribbit_svnPre\res\
+* Ribbit_svnPre\res\desktop.ini
+* Ribbit_svnPre\res\drawable-hdpi\
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_disabled_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_normal_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_pressed_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_activated_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_default_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_disabled_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-hdpi\avatar_empty.png
+* Ribbit_svnPre\res\drawable-hdpi\avatar_selected.png
+* Ribbit_svnPre\res\drawable-hdpi\background.png
+* Ribbit_svnPre\res\drawable-hdpi\background_fill.png
+* Ribbit_svnPre\res\drawable-hdpi\desktop.ini
+* Ribbit_svnPre\res\drawable-hdpi\ic_action_camera.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_action_picture.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_action_play_over_video.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_action_send_now.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_launcher.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_menu_camera.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_menu_overflow.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_menu_send.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_picture.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_stat_notification_icon.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_stat_trophy_fill_512.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_stat_unlike_512.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_tab_friends.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_tab_inbox.png
+* Ribbit_svnPre\res\drawable-hdpi\ic_video.png
+* Ribbit_svnPre\res\drawable-hdpi\p_splash.png
+* Ribbit_svnPre\res\drawable-mdpi\
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_disabled_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_normal_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_pressed_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_activated_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_default_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_disabled_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-mdpi\avatar_empty.png
+* Ribbit_svnPre\res\drawable-mdpi\avatar_selected.png
+* Ribbit_svnPre\res\drawable-mdpi\background.png
+* Ribbit_svnPre\res\drawable-mdpi\background_fill.png
+* Ribbit_svnPre\res\drawable-mdpi\desktop.ini
+* Ribbit_svnPre\res\drawable-mdpi\ic_action_camera.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_action_picture.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_action_play_over_video.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_action_send_now.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_launcher.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_menu_camera.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_menu_overflow.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_menu_send.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_picture.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_stat_notification_icon.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_stat_trophy_fill_512.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_stat_unlike_512.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_tab_friends.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_tab_inbox.png
+* Ribbit_svnPre\res\drawable-mdpi\ic_video.png
+* Ribbit_svnPre\res\drawable-mdpi\p_splash.png
+* Ribbit_svnPre\res\drawable-xhdpi\
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_disabled_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_normal_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_pressed_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_activated_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_default_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_disabled_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xhdpi\avatar_empty.png
+* Ribbit_svnPre\res\drawable-xhdpi\avatar_selected.png
+* Ribbit_svnPre\res\drawable-xhdpi\background.png
+* Ribbit_svnPre\res\drawable-xhdpi\background_fill.png
+* Ribbit_svnPre\res\drawable-xhdpi\desktop.ini
+* Ribbit_svnPre\res\drawable-xhdpi\ic_action_camera.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_action_picture.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_action_play_over_video.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_action_send_now.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_launcher.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_menu_camera.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_menu_overflow.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_menu_send.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_picture.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_stat_notification_icon.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_stat_trophy_fill_512.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_stat_unlike_512.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_tab_friends.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_tab_inbox.png
+* Ribbit_svnPre\res\drawable-xhdpi\ic_video.png
+* Ribbit_svnPre\res\drawable-xhdpi\p_splash.png
+* Ribbit_svnPre\res\drawable-xxhdpi\
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_disabled_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_normal_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_pressed_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_activated_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_default_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_disabled_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_focused_holo_light.9.png
+* Ribbit_svnPre\res\drawable-xxhdpi\avatar_empty.png
+* Ribbit_svnPre\res\drawable-xxhdpi\avatar_selected.png
+* Ribbit_svnPre\res\drawable-xxhdpi\background.png
+* Ribbit_svnPre\res\drawable-xxhdpi\background_fill.png
+* Ribbit_svnPre\res\drawable-xxhdpi\desktop.ini
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_launcher.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_menu_camera.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_menu_overflow.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_menu_send.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_picture.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_stat_notification_icon.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_stat_trophy_fill_512.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_stat_unlike_512.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_tab_friends.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_tab_inbox.png
+* Ribbit_svnPre\res\drawable-xxhdpi\ic_video.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\
+* Ribbit_svnPre\res\drawable-xxxhdpi\avatar_empty.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\avatar_selected.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\background.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\background_fill.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\desktop.ini
+* Ribbit_svnPre\res\drawable-xxxhdpi\ic_launcher.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\ic_menu_camera.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\ic_menu_overflow.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\ic_menu_send.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\ic_picture.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\ic_tab_friends.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\ic_tab_inbox.png
+* Ribbit_svnPre\res\drawable-xxxhdpi\ic_video.png
+* Ribbit_svnPre\res\drawable\
+* Ribbit_svnPre\res\drawable\apptheme_btn_default_holo_light.xml
+* Ribbit_svnPre\res\drawable\apptheme_edit_text_holo_light.xml
+* Ribbit_svnPre\res\drawable\button_custom.xml
+* Ribbit_svnPre\res\drawable\button_login.xml
+* Ribbit_svnPre\res\drawable\desktop.ini
+* Ribbit_svnPre\res\drawable\login_button_focused.png
+* Ribbit_svnPre\res\drawable\login_button_normal.png
+* Ribbit_svnPre\res\drawable\login_button_pressed.png
+* Ribbit_svnPre\res\drawable\notification_icon.bmp
+* Ribbit_svnPre\res\drawable\notification_icon_black.png
+* Ribbit_svnPre\res\drawable\notification_icon_scaled_black.png
+* Ribbit_svnPre\res\drawable\notification_icon_scaled_white.png
+* Ribbit_svnPre\res\drawable\notification_icon_white.png
+* Ribbit_svnPre\res\drawable\notification_icon_white2.png
+* Ribbit_svnPre\res\drawable\table_round_shape.xml
+* Ribbit_svnPre\res\layout\
+* Ribbit_svnPre\res\layout\activity_alarm_receiver.xml
+* Ribbit_svnPre\res\layout\activity_edit_friends.xml
+* Ribbit_svnPre\res\layout\activity_intro.xml
+* Ribbit_svnPre\res\layout\activity_login.xml
+* Ribbit_svnPre\res\layout\activity_main.xml
+* Ribbit_svnPre\res\layout\activity_notification_action.xml
+* Ribbit_svnPre\res\layout\activity_recipients.xml
+* Ribbit_svnPre\res\layout\activity_signup.xml
+* Ribbit_svnPre\res\layout\activity_user_details.xml
+* Ribbit_svnPre\res\layout\activity_view_image.xml
+* Ribbit_svnPre\res\layout\desktop.ini
+* Ribbit_svnPre\res\layout\fragment_friends.xml
+* Ribbit_svnPre\res\layout\fragment_inbox.xml
+* Ribbit_svnPre\res\layout\fragment_login.xml
+* Ribbit_svnPre\res\layout\fragment_peaps.xml
+* Ribbit_svnPre\res\layout\fragment_signup.xml
+* Ribbit_svnPre\res\layout\message_item.xml
+* Ribbit_svnPre\res\menu\
+* Ribbit_svnPre\res\menu\desktop.ini
+* Ribbit_svnPre\res\menu\main.xml
+* Ribbit_svnPre\res\menu\recipients.xml
+* Ribbit_svnPre\res\menu\user_details.xml
+* Ribbit_svnPre\res\values-v11\
+* Ribbit_svnPre\res\values-v11\desktop.ini
+* Ribbit_svnPre\res\values-v11\styles.xml
+* Ribbit_svnPre\res\values-v14\
+* Ribbit_svnPre\res\values-v14\desktop.ini
+* Ribbit_svnPre\res\values-v14\styles.xml
+* Ribbit_svnPre\res\values-w820dp\
+* Ribbit_svnPre\res\values-w820dp\desktop.ini
+* Ribbit_svnPre\res\values-w820dp\dimens.xml
+* Ribbit_svnPre\res\values\
+* Ribbit_svnPre\res\values\attrs.xml
+* Ribbit_svnPre\res\values\colors.xml
+* Ribbit_svnPre\res\values\desktop.ini
+* Ribbit_svnPre\res\values\dimens.xml
+* Ribbit_svnPre\res\values\strings.xml
+* Ribbit_svnPre\res\values\styles.xml
+* Ribbit_svnPre\src\
+* Ribbit_svnPre\src\com\
+* Ribbit_svnPre\src\com\desktop.ini
+* Ribbit_svnPre\src\com\nalband\
+* Ribbit_svnPre\src\com\nalband\desktop.ini
+* Ribbit_svnPre\src\com\nalband\ribbit\
+* Ribbit_svnPre\src\com\nalband\ribbit\RibbitApplication.java
+* Ribbit_svnPre\src\com\nalband\ribbit\UserDetailsActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\adapters\
+* Ribbit_svnPre\src\com\nalband\ribbit\adapters\MessageAdapter.java
+* Ribbit_svnPre\src\com\nalband\ribbit\adapters\SectionsPagerAdapter.java
+* Ribbit_svnPre\src\com\nalband\ribbit\adapters\desktop.ini
+* Ribbit_svnPre\src\com\nalband\ribbit\desktop.ini
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\EditFriendsActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\FriendsFragment.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\InboxFragment.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\IntroActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\LoginActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\MainActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\NativeLoginActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\NotificaitonViewActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\PeapsFragment.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\RecipientsActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\SignupActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\ViewImageActivity.java
+* Ribbit_svnPre\src\com\nalband\ribbit\ui\desktop.ini
+* Ribbit_svnPre\src\com\nalband\ribbit\util\
+* Ribbit_svnPre\src\com\nalband\ribbit\util\AlarmReceiver.java
+* Ribbit_svnPre\src\com\nalband\ribbit\util\NotificationActionReceiver.java
+* Ribbit_svnPre\src\com\nalband\ribbit\util\SystemUiHider.java
+* Ribbit_svnPre\src\com\nalband\ribbit\util\SystemUiHiderBase.java
+* Ribbit_svnPre\src\com\nalband\ribbit\util\SystemUiHiderHoneycomb.java
+* Ribbit_svnPre\src\com\nalband\ribbit\util\desktop.ini
+* Ribbit_svnPre\src\com\nalband\ribbit\utils\
+* Ribbit_svnPre\src\com\nalband\ribbit\utils\FileHelper.java
+* Ribbit_svnPre\src\com\nalband\ribbit\utils\GlobalConstants.java
+* Ribbit_svnPre\src\com\nalband\ribbit\utils\ImageResizer.java
+* Ribbit_svnPre\src\com\nalband\ribbit\utils\ParseConstants.java
+* Ribbit_svnPre\src\com\nalband\ribbit\utils\desktop.ini
+* Ribbit_svnPre\src\desktop.ini
+* Ribbit_svnPre\tags\
+* Ribbit_svnPre\tags\desktop.ini
+* Ribbit_svnPre\trunk\
+* Ribbit_svnPre\trunk\desktop.ini
+* branches\
+* branches\desktop.ini
+* desktop.ini
+* gimp work\
+* gimp work\GimpWork\
+* gimp work\GimpWork\Dummy.Card.Bday.png
+* gimp work\GimpWork\Dummy.Card.FB.png
+* gimp work\GimpWork\Dummy.Card.News.png
+* gimp work\GimpWork\FlaticonDownload.zip
+* gimp work\GimpWork\FlaticonDownload\
+* gimp work\GimpWork\FlaticonDownload\desktop.ini
+* gimp work\GimpWork\FlaticonDownload\png\
+* gimp work\GimpWork\FlaticonDownload\png\apple12.png
+* gimp work\GimpWork\FlaticonDownload\png\burger1.png
+* gimp work\GimpWork\FlaticonDownload\png\carrot3.png
+* gimp work\GimpWork\FlaticonDownload\png\carrot8.png
+* gimp work\GimpWork\FlaticonDownload\png\chicken4.png
+* gimp work\GimpWork\FlaticonDownload\png\chicken7.png
+* gimp work\GimpWork\FlaticonDownload\png\covered18.png
+* gimp work\GimpWork\FlaticonDownload\png\desktop.ini
+* gimp work\GimpWork\FlaticonDownload\png\thigh.png
+* gimp work\GimpWork\Peaps_check\
+* gimp work\GimpWork\Peaps_check\desktop.ini
+* gimp work\GimpWork\Peaps_check\peaps_check120.png
+* gimp work\GimpWork\Peaps_check\peaps_check160.png
+* gimp work\GimpWork\Peaps_check\peaps_check40.png
+* gimp work\GimpWork\Peaps_check\peaps_check60.png
+* gimp work\GimpWork\Peaps_check\peaps_check80.png
+* gimp work\GimpWork\Peaps_plus\
+* gimp work\GimpWork\Peaps_plus\desktop.ini
+* gimp work\GimpWork\Peaps_plus\peaps_plus120.png
+* gimp work\GimpWork\Peaps_plus\peaps_plus160.png
+* gimp work\GimpWork\Peaps_plus\peaps_plus40.png
+* gimp work\GimpWork\Peaps_plus\peaps_plus60.png
+* gimp work\GimpWork\Peaps_plus\peaps_plus80.png
+* gimp work\GimpWork\Screenshots\
+* gimp work\GimpWork\Screenshots\Icon.png
+* gimp work\GimpWork\Screenshots\Login.png
+* gimp work\GimpWork\Screenshots\Notifications.png
+* gimp work\GimpWork\Screenshots\Results.png
+* gimp work\GimpWork\Screenshots\desktop.ini
+* gimp work\GimpWork\Unlike-512.png
+* gimp work\GimpWork\comfortaa___font_by_aajohan-d1qr019.zip
+* gimp work\GimpWork\desktop.ini
+* gimp work\GimpWork\diet.icon.gray.trans.png
+* gimp work\GimpWork\diet.icon.white.trans.xcf
+* gimp work\GimpWork\diet.icon.white.trans2.xcf
+* gimp work\GimpWork\diet.icon.white.xcf
+* gimp work\GimpWork\exercise.icon.white.trans.png
+* gimp work\GimpWork\exercise.icon.white.trans.xcf
+* gimp work\GimpWork\exercise.icon.white.xcf
+* gimp work\GimpWork\ic_action_logout.zip
+* gimp work\GimpWork\ic_diet.zip
+* gimp work\GimpWork\ic_diet2.png
+* gimp work\GimpWork\ic_diet\
+* gimp work\GimpWork\ic_diet\desktop.ini
+* gimp work\GimpWork\ic_diet\res\
+* gimp work\GimpWork\ic_diet\res\desktop.ini
+* gimp work\GimpWork\ic_diet\res\drawable-hdpi\
+* gimp work\GimpWork\ic_diet\res\drawable-hdpi\desktop.ini
+* gimp work\GimpWork\ic_diet\res\drawable-hdpi\ic_diet.png
+* gimp work\GimpWork\ic_diet\res\drawable-mdpi\
+* gimp work\GimpWork\ic_diet\res\drawable-mdpi\desktop.ini
+* gimp work\GimpWork\ic_diet\res\drawable-mdpi\ic_diet.png
+* gimp work\GimpWork\ic_diet\res\drawable-xhdpi\
+* gimp work\GimpWork\ic_diet\res\drawable-xhdpi\desktop.ini
+* gimp work\GimpWork\ic_diet\res\drawable-xhdpi\ic_diet.png
+* gimp work\GimpWork\ic_diet\res\drawable-xxhdpi\
+* gimp work\GimpWork\ic_diet\res\drawable-xxhdpi\desktop.ini
+* gimp work\GimpWork\ic_diet\res\drawable-xxhdpi\ic_diet.png
+* gimp work\GimpWork\ic_exercise.zip
+* gimp work\GimpWork\ic_exercise\
+* gimp work\GimpWork\ic_exercise\desktop.ini
+* gimp work\GimpWork\ic_exercise\res\
+* gimp work\GimpWork\ic_exercise\res\desktop.ini
+* gimp work\GimpWork\ic_exercise\res\drawable-hdpi\
+* gimp work\GimpWork\ic_exercise\res\drawable-hdpi\desktop.ini
+* gimp work\GimpWork\ic_exercise\res\drawable-hdpi\ic_exercise.png
+* gimp work\GimpWork\ic_exercise\res\drawable-mdpi\
+* gimp work\GimpWork\ic_exercise\res\drawable-mdpi\desktop.ini
+* gimp work\GimpWork\ic_exercise\res\drawable-mdpi\ic_exercise.png
+* gimp work\GimpWork\ic_exercise\res\drawable-xhdpi\
+* gimp work\GimpWork\ic_exercise\res\drawable-xhdpi\desktop.ini
+* gimp work\GimpWork\ic_exercise\res\drawable-xhdpi\ic_exercise.png
+* gimp work\GimpWork\ic_exercise\res\drawable-xxhdpi\
+* gimp work\GimpWork\ic_exercise\res\drawable-xxhdpi\desktop.ini
+* gimp work\GimpWork\ic_exercise\res\drawable-xxhdpi\ic_exercise.png
+* gimp work\GimpWork\ic_ic_diet2.zip
+* gimp work\GimpWork\ic_ic_diet2\
+* gimp work\GimpWork\ic_ic_diet2\desktop.ini
+* gimp work\GimpWork\ic_ic_diet2\res\
+* gimp work\GimpWork\ic_ic_diet2\res\desktop.ini
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-hdpi\
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-hdpi\desktop.ini
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-hdpi\ic_ic_diet2.png
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-mdpi\
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-mdpi\desktop.ini
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-mdpi\ic_ic_diet2.png
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-xhdpi\
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-xhdpi\desktop.ini
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-xhdpi\ic_ic_diet2.png
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-xxhdpi\
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-xxhdpi\desktop.ini
+* gimp work\GimpWork\ic_ic_diet2\res\drawable-xxhdpi\ic_ic_diet2.png
+* gimp work\GimpWork\ic_launcher.zip
+* gimp work\GimpWork\ic_launcher\
+* gimp work\GimpWork\ic_launcher\desktop.ini
+* gimp work\GimpWork\ic_launcher\res\
+* gimp work\GimpWork\ic_launcher\res\desktop.ini
+* gimp work\GimpWork\ic_launcher\res\drawable-hdpi\
+* gimp work\GimpWork\ic_launcher\res\drawable-hdpi\desktop.ini
+* gimp work\GimpWork\ic_launcher\res\drawable-hdpi\ic_launcher.png
+* gimp work\GimpWork\ic_launcher\res\drawable-mdpi\
+* gimp work\GimpWork\ic_launcher\res\drawable-mdpi\desktop.ini
+* gimp work\GimpWork\ic_launcher\res\drawable-mdpi\ic_launcher.png
+* gimp work\GimpWork\ic_launcher\res\drawable-xhdpi\
+* gimp work\GimpWork\ic_launcher\res\drawable-xhdpi\desktop.ini
+* gimp work\GimpWork\ic_launcher\res\drawable-xhdpi\ic_launcher.png
+* gimp work\GimpWork\ic_launcher\res\drawable-xxhdpi\
+* gimp work\GimpWork\ic_launcher\res\drawable-xxhdpi\desktop.ini
+* gimp work\GimpWork\ic_launcher\res\drawable-xxhdpi\ic_launcher.png
+* gimp work\GimpWork\ic_launcher\res\drawable-xxxhdpi\
+* gimp work\GimpWork\ic_launcher\res\drawable-xxxhdpi\desktop.ini
+* gimp work\GimpWork\ic_launcher\res\drawable-xxxhdpi\ic_launcher.png
+* gimp work\GimpWork\ic_stat_trophy_notifications.zip
+* gimp work\GimpWork\ic_stat_trophy_peaps_blue.zip
+* gimp work\GimpWork\ic_work.zip
+* gimp work\GimpWork\ic_work\
+* gimp work\GimpWork\ic_work\desktop.ini
+* gimp work\GimpWork\ic_work\res\
+* gimp work\GimpWork\ic_work\res\desktop.ini
+* gimp work\GimpWork\ic_work\res\drawable-hdpi\
+* gimp work\GimpWork\ic_work\res\drawable-hdpi\desktop.ini
+* gimp work\GimpWork\ic_work\res\drawable-hdpi\ic_work.png
+* gimp work\GimpWork\ic_work\res\drawable-mdpi\
+* gimp work\GimpWork\ic_work\res\drawable-mdpi\desktop.ini
+* gimp work\GimpWork\ic_work\res\drawable-mdpi\ic_work.png
+* gimp work\GimpWork\ic_work\res\drawable-xhdpi\
+* gimp work\GimpWork\ic_work\res\drawable-xhdpi\desktop.ini
+* gimp work\GimpWork\ic_work\res\drawable-xhdpi\ic_work.png
+* gimp work\GimpWork\ic_work\res\drawable-xxhdpi\
+* gimp work\GimpWork\ic_work\res\drawable-xxhdpi\desktop.ini
+* gimp work\GimpWork\ic_work\res\drawable-xxhdpi\ic_work.png
+* gimp work\GimpWork\icons.pptx
+* gimp work\GimpWork\logout (1).png
+* gimp work\GimpWork\logout.png
+* gimp work\GimpWork\notification_icon.bmp
+* gimp work\GimpWork\notification_icon.xcf
+* gimp work\GimpWork\notification_iconWhite.xcf
+* gimp work\GimpWork\notification_icon_black.png
+* gimp work\GimpWork\notification_icon_diet_white_64.png
+* gimp work\GimpWork\notification_icon_diet_white_64_fill.png
+* gimp work\GimpWork\notification_icon_exercise_white_64.png
+* gimp work\GimpWork\notification_icon_scaled_black.png
+* gimp work\GimpWork\notification_icon_scaled_black.xcf
+* gimp work\GimpWork\notification_icon_scaled_white.png
+* gimp work\GimpWork\notification_icon_trophy_white_64.png
+* gimp work\GimpWork\notification_icon_trophy_white_trans.png
+* gimp work\GimpWork\notification_icon_white.png
+* gimp work\GimpWork\notification_icon_white2.png
+* gimp work\GimpWork\notification_icon_work_white_.64.png
+* gimp work\GimpWork\notification_icon_work_white_64.png
+* gimp work\GimpWork\p_500x500.png
+* gimp work\GimpWork\p_500x500.xcf
+* gimp work\GimpWork\p_620x620.png
+* gimp work\GimpWork\p_620x620.xcf
+* gimp work\GimpWork\peaps_check.xcf
+* gimp work\GimpWork\peaps_fb.png
+* gimp work\GimpWork\peaps_plus.xcf
+* gimp work\GimpWork\plus.xcf
+* gimp work\GimpWork\plus160.png
+* gimp work\GimpWork\res\
+* gimp work\GimpWork\res\desktop.ini
+* gimp work\GimpWork\res\drawable-hdpi\
+* gimp work\GimpWork\res\drawable-hdpi\desktop.ini
+* gimp work\GimpWork\res\drawable-hdpi\ic_diet.png
+* gimp work\GimpWork\res\drawable-mdpi\
+* gimp work\GimpWork\res\drawable-mdpi\desktop.ini
+* gimp work\GimpWork\res\drawable-mdpi\ic_diet.png
+* gimp work\GimpWork\res\drawable-xhdpi\
+* gimp work\GimpWork\res\drawable-xhdpi\desktop.ini
+* gimp work\GimpWork\res\drawable-xhdpi\ic_diet.png
+* gimp work\GimpWork\res\drawable-xxhdpi\
+* gimp work\GimpWork\res\drawable-xxhdpi\desktop.ini
+* gimp work\GimpWork\res\drawable-xxhdpi\ic_diet.png
+* gimp work\GimpWork\trophy-64.bmp
+* gimp work\GimpWork\trophy-64.xcf
+* gimp work\GimpWork\trophy-fill-512.png
+* gimp work\GimpWork\trophy-fill-512_AN.xcf
+* gimp work\GimpWork\trophy-peaps-blue-1024-whitebg.png
+* gimp work\GimpWork\trophy-peaps-blue-1024-whitebg.xcf
+* gimp work\GimpWork\trophy-peaps-blue-1024.jpg
+* gimp work\GimpWork\trophy-peaps-blue.-1024-jpeg-trans.jpg
+* gimp work\GimpWork\trophy-peaps-blue.-1024-jpeg-trans.png
+* gimp work\GimpWork\trophy-peaps-blue.xcf
+* gimp work\GimpWork\trophy-play-store-icon-512-banner.xcf
+* gimp work\GimpWork\trophy-play-store-icon-512-blue-banner.png
+* gimp work\GimpWork\trophy-play-store-icon-512-blue.png
+* gimp work\GimpWork\trophy-play-store-icon-512-blue.xcf
+* gimp work\GimpWork\trophy-play-store-icon-512-icon.xcf
+* gimp work\GimpWork\trophy-play-store-icon-512.png
+* gimp work\GimpWork\trophy_launcher.png
+* gimp work\GimpWork\trophy_launcher.xcf
+* gimp work\GimpWork\trophy_peaps_blue.png
+* gimp work\GimpWork\trophy_peaps_blue_white_bg.png
+* gimp work\GimpWork\trophy_white_background.png
+* gimp work\GimpWork\work.icon.64.xcf
+* gimp work\GimpWork\work.icon.white.64.xcf
+* gimp work\GimpWork\work.icon.white.trans.png
+* gimp work\GimpWork\work.icon.white.trans.xcf
+* gimp work\GimpWork\work.icon.white.xcf
+* gimp work\GimpWork\work.icon.xcf
+* gimp work\GimpWork\~$icons.pptx
+* gimp work\barbell_fitnessstrength_weight_exercise_expander_fitness_trainer_fitness_room_gym_gymnastic_health-512 (1).png
+* gimp work\barbell_fitnessstrength_weight_exercise_expander_fitness_trainer_fitness_room_gym_gymnastic_health-512.png
+* gimp work\desktop.ini
+* proguard-project.txt
+* tags\
+* tags\Ribbit_svnPre\
+* tags\Ribbit_svnPre\.classpath
+* tags\Ribbit_svnPre\.project
+* tags\Ribbit_svnPre\AndroidManifest.xml
+* tags\Ribbit_svnPre\assets\
+* tags\Ribbit_svnPre\assets\desktop.ini
+* tags\Ribbit_svnPre\bin\
+* tags\Ribbit_svnPre\bin\AndroidManifest.xml
+* tags\Ribbit_svnPre\bin\R.txt
+* tags\Ribbit_svnPre\bin\Ribbit.apk
+* tags\Ribbit_svnPre\bin\Ribbit_svn.apk
+* tags\Ribbit_svnPre\bin\classes.dex
+* tags\Ribbit_svnPre\bin\classes\
+* tags\Ribbit_svnPre\bin\classes\com\
+* tags\Ribbit_svnPre\bin\classes\com\desktop.ini
+* tags\Ribbit_svnPre\bin\classes\com\facebook\
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R$attr.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R$color.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R$dimen.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R$drawable.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R$id.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R$layout.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R$string.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R$style.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R$styleable.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\R.class
+* tags\Ribbit_svnPre\bin\classes\com\facebook\android\desktop.ini
+* tags\Ribbit_svnPre\bin\classes\com\facebook\desktop.ini
+* tags\Ribbit_svnPre\bin\classes\com\nalband\
+* tags\Ribbit_svnPre\bin\classes\com\nalband\desktop.ini
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\BuildConfig.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\Manifest$permission.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\Manifest.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$array.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$attr.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$color.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$dimen.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$drawable.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$id.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$layout.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$menu.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$string.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$style.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R$styleable.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\R.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\RibbitApplication.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\UserDetailsActivity$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\UserDetailsActivity$2.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\UserDetailsActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\MessageAdapter$ViewHolder.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\MessageAdapter.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\SectionsPagerAdapter.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\adapters\desktop.ini
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\desktop.ini
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\EditFriendsActivity$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\EditFriendsActivity$2.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\EditFriendsActivity$3.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\EditFriendsActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\FriendsFragment$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\FriendsFragment.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\InboxFragment$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\InboxFragment.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity$2.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity$3.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity$4.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\IntroActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity$2$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity$2.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity$PlaceholderFragment.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\LoginActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\MainActivity$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\MainActivity$2.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\MainActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$2.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$3$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$3.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$4.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity$PlaceholderFragment.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NativeLoginActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\NotificaitonViewActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\PeapsFragment$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\PeapsFragment.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\RecipientsActivity$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\RecipientsActivity$2.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\RecipientsActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\SignupActivity$1$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\SignupActivity$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\SignupActivity$PlaceholderFragment.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\SignupActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\ViewImageActivity$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\ViewImageActivity.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\ui\desktop.ini
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\AlarmReceiver.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\NotificationActionReceiver$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\NotificationActionReceiver.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHider$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHider$OnVisibilityChangeListener.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHider.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHiderBase.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHiderHoneycomb$1.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\SystemUiHiderHoneycomb.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\util\desktop.ini
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\FileHelper.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\GlobalConstants.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\ImageResizer.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\ParseConstants.class
+* tags\Ribbit_svnPre\bin\classes\com\nalband\ribbit\utils\desktop.ini
+* tags\Ribbit_svnPre\bin\classes\desktop.ini
+* tags\Ribbit_svnPre\bin\desktop.ini
+* tags\Ribbit_svnPre\bin\dexedLibs\
+* tags\Ribbit_svnPre\bin\dexedLibs\Parse-1.5.1-5b0d7b9b5d15f6c25976afe460ab7477.jar
+* tags\Ribbit_svnPre\bin\dexedLibs\Parse-1.5.1-99f39b0fe6c785714ed9a1dd5e0485e6.jar
+* tags\Ribbit_svnPre\bin\dexedLibs\android-support-v13-0a7537ecdddbe8089b12d0e6f6648fbe.jar
+* tags\Ribbit_svnPre\bin\dexedLibs\android-support-v13-48f57bb956e7b27d7ef94fe7be111a6e.jar
+* tags\Ribbit_svnPre\bin\dexedLibs\bolts-android-1.1.2-1ae40bad93adbd8ee81389c1f52ab259.jar
+* tags\Ribbit_svnPre\bin\dexedLibs\commons-io-2.4-493916836e62d60e27ffe2d798098c01.jar
+* tags\Ribbit_svnPre\bin\dexedLibs\commons-io-2.4-bab76b57ff843bbd74e6274368a5cb83.jar
+* tags\Ribbit_svnPre\bin\dexedLibs\desktop.ini
+* tags\Ribbit_svnPre\bin\dexedLibs\facebooksdk-7296baf95ca4aae262041f9e1349cce0.jar
+* tags\Ribbit_svnPre\bin\dexedLibs\picasso-2.3.3-05ac5a944010464e06bc118327b77cc5.jar
+* tags\Ribbit_svnPre\bin\dexedLibs\picasso-2.3.3-467c71115abcbe75f53e11be2ae76245.jar
+* tags\Ribbit_svnPre\bin\jarlist.cache
+* tags\Ribbit_svnPre\bin\res\
+* tags\Ribbit_svnPre\bin\res\crunch\
+* tags\Ribbit_svnPre\bin\res\crunch\desktop.ini
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_normal_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_btn_default_pressed_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_activated_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_default_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\apptheme_textfield_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\avatar_empty.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\avatar_selected.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\background.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\background_fill.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\desktop.ini
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_action_camera.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_action_picture.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_action_play_over_video.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_action_send_now.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_launcher.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_picture.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_stat_notification_icon.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_stat_trophy_fill_512.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_stat_unlike_512.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\ic_video.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-hdpi\p_splash.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_normal_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_btn_default_pressed_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_activated_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_default_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\apptheme_textfield_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\avatar_empty.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\avatar_selected.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\background.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\background_fill.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\desktop.ini
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_action_camera.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_action_picture.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_action_play_over_video.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_action_send_now.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_launcher.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_picture.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_stat_notification_icon.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_stat_trophy_fill_512.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_stat_unlike_512.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\ic_video.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-mdpi\p_splash.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_normal_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_btn_default_pressed_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_activated_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_default_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\apptheme_textfield_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\avatar_empty.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\avatar_selected.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\background.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\background_fill.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\desktop.ini
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_action_camera.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_action_picture.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_action_play_over_video.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_action_send_now.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_launcher.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_picture.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_stat_notification_icon.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_stat_trophy_fill_512.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_stat_unlike_512.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\ic_video.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xhdpi\p_splash.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_normal_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_btn_default_pressed_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_activated_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_default_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\apptheme_textfield_focused_holo_light.9.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\avatar_empty.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\avatar_selected.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\background.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\background_fill.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\desktop.ini
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_launcher.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_picture.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_stat_notification_icon.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_stat_trophy_fill_512.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_stat_unlike_512.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxhdpi\ic_video.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\avatar_empty.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\avatar_selected.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\background.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\background_fill.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\desktop.ini
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_launcher.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_picture.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable-xxxhdpi\ic_video.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\desktop.ini
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\login_button_focused.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\login_button_normal.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\login_button_pressed.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_black.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_scaled_black.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_scaled_white.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_white.png
+* tags\Ribbit_svnPre\bin\res\crunch\drawable\notification_icon_white2.png
+* tags\Ribbit_svnPre\bin\res\desktop.ini
+* tags\Ribbit_svnPre\bin\resources.ap_
+* tags\Ribbit_svnPre\branches\
+* tags\Ribbit_svnPre\branches\desktop.ini
+* tags\Ribbit_svnPre\desktop.ini
+* tags\Ribbit_svnPre\gen\
+* tags\Ribbit_svnPre\gen\com\
+* tags\Ribbit_svnPre\gen\com\desktop.ini
+* tags\Ribbit_svnPre\gen\com\facebook\
+* tags\Ribbit_svnPre\gen\com\facebook\android\
+* tags\Ribbit_svnPre\gen\com\facebook\android\R.java
+* tags\Ribbit_svnPre\gen\com\facebook\android\desktop.ini
+* tags\Ribbit_svnPre\gen\com\facebook\desktop.ini
+* tags\Ribbit_svnPre\gen\com\nalband\
+* tags\Ribbit_svnPre\gen\com\nalband\desktop.ini
+* tags\Ribbit_svnPre\gen\com\nalband\ribbit\
+* tags\Ribbit_svnPre\gen\com\nalband\ribbit\BuildConfig.java
+* tags\Ribbit_svnPre\gen\com\nalband\ribbit\Manifest.java
+* tags\Ribbit_svnPre\gen\com\nalband\ribbit\R.java
+* tags\Ribbit_svnPre\gen\com\nalband\ribbit\desktop.ini
+* tags\Ribbit_svnPre\gen\desktop.ini
+* tags\Ribbit_svnPre\libs\
+* tags\Ribbit_svnPre\libs\Parse-1.5.1.jar
+* tags\Ribbit_svnPre\libs\android-support-v13.jar
+* tags\Ribbit_svnPre\libs\android-support-v4.jar
+* tags\Ribbit_svnPre\libs\commons-io-2.4.jar
+* tags\Ribbit_svnPre\libs\desktop.ini
+* tags\Ribbit_svnPre\libs\picasso-2.3.3.jar
+* tags\Ribbit_svnPre\proguard-project.txt
+* tags\Ribbit_svnPre\project.properties
+* tags\Ribbit_svnPre\res\
+* tags\Ribbit_svnPre\res\desktop.ini
+* tags\Ribbit_svnPre\res\drawable-hdpi\
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_normal_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_btn_default_pressed_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_activated_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_default_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\apptheme_textfield_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\avatar_empty.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\avatar_selected.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\background.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\background_fill.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\desktop.ini
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_action_camera.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_action_picture.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_action_play_over_video.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_action_send_now.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_launcher.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_picture.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_stat_notification_icon.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_stat_trophy_fill_512.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_stat_unlike_512.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\ic_video.png
+* tags\Ribbit_svnPre\res\drawable-hdpi\p_splash.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_normal_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_btn_default_pressed_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_activated_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_default_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\apptheme_textfield_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\avatar_empty.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\avatar_selected.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\background.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\background_fill.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\desktop.ini
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_action_camera.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_action_picture.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_action_play_over_video.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_action_send_now.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_launcher.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_picture.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_stat_notification_icon.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_stat_trophy_fill_512.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_stat_unlike_512.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\ic_video.png
+* tags\Ribbit_svnPre\res\drawable-mdpi\p_splash.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_normal_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_btn_default_pressed_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_activated_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_default_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\apptheme_textfield_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\avatar_empty.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\avatar_selected.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\background.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\background_fill.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\desktop.ini
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_action_camera.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_action_picture.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_action_play_over_video.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_action_send_now.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_launcher.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_picture.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_stat_notification_icon.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_stat_trophy_fill_512.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_stat_unlike_512.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\ic_video.png
+* tags\Ribbit_svnPre\res\drawable-xhdpi\p_splash.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_normal_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_btn_default_pressed_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_activated_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_default_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_disabled_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_disabled_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\apptheme_textfield_focused_holo_light.9.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\avatar_empty.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\avatar_selected.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\background.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\background_fill.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\desktop.ini
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_launcher.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_picture.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_stat_notification_icon.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_stat_trophy_fill_512.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_stat_unlike_512.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\res\drawable-xxhdpi\ic_video.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\avatar_empty.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\avatar_selected.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\background.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\background_fill.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\desktop.ini
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\ic_launcher.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\ic_menu_camera.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\ic_menu_overflow.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\ic_menu_send.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\ic_picture.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\ic_tab_friends.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\ic_tab_inbox.png
+* tags\Ribbit_svnPre\res\drawable-xxxhdpi\ic_video.png
+* tags\Ribbit_svnPre\res\drawable\
+* tags\Ribbit_svnPre\res\drawable\apptheme_btn_default_holo_light.xml
+* tags\Ribbit_svnPre\res\drawable\apptheme_edit_text_holo_light.xml
+* tags\Ribbit_svnPre\res\drawable\button_custom.xml
+* tags\Ribbit_svnPre\res\drawable\button_login.xml
+* tags\Ribbit_svnPre\res\drawable\desktop.ini
+* tags\Ribbit_svnPre\res\drawable\login_button_focused.png
+* tags\Ribbit_svnPre\res\drawable\login_button_normal.png
+* tags\Ribbit_svnPre\res\drawable\login_button_pressed.png
+* tags\Ribbit_svnPre\res\drawable\notification_icon.bmp
+* tags\Ribbit_svnPre\res\drawable\notification_icon_black.png
+* tags\Ribbit_svnPre\res\drawable\notification_icon_scaled_black.png
+* tags\Ribbit_svnPre\res\drawable\notification_icon_scaled_white.png
+* tags\Ribbit_svnPre\res\drawable\notification_icon_white.png
+* tags\Ribbit_svnPre\res\drawable\notification_icon_white2.png
+* tags\Ribbit_svnPre\res\drawable\table_round_shape.xml
+* tags\Ribbit_svnPre\res\layout\
+* tags\Ribbit_svnPre\res\layout\activity_alarm_receiver.xml
+* tags\Ribbit_svnPre\res\layout\activity_edit_friends.xml
+* tags\Ribbit_svnPre\res\layout\activity_intro.xml
+* tags\Ribbit_svnPre\res\layout\activity_login.xml
+* tags\Ribbit_svnPre\res\layout\activity_main.xml
+* tags\Ribbit_svnPre\res\layout\activity_notification_action.xml
+* tags\Ribbit_svnPre\res\layout\activity_recipients.xml
+* tags\Ribbit_svnPre\res\layout\activity_signup.xml
+* tags\Ribbit_svnPre\res\layout\activity_user_details.xml
+* tags\Ribbit_svnPre\res\layout\activity_view_image.xml
+* tags\Ribbit_svnPre\res\layout\desktop.ini
+* tags\Ribbit_svnPre\res\layout\fragment_friends.xml
+* tags\Ribbit_svnPre\res\layout\fragment_inbox.xml
+* tags\Ribbit_svnPre\res\layout\fragment_login.xml
+* tags\Ribbit_svnPre\res\layout\fragment_peaps.xml
+* tags\Ribbit_svnPre\res\layout\fragment_signup.xml
+* tags\Ribbit_svnPre\res\layout\message_item.xml
+* tags\Ribbit_svnPre\res\menu\
+* tags\Ribbit_svnPre\res\menu\desktop.ini
+* tags\Ribbit_svnPre\res\menu\main.xml
+* tags\Ribbit_svnPre\res\menu\recipients.xml
+* tags\Ribbit_svnPre\res\menu\user_details.xml
+* tags\Ribbit_svnPre\res\values-v11\
+* tags\Ribbit_svnPre\res\values-v11\desktop.ini
+* tags\Ribbit_svnPre\res\values-v11\styles.xml
+* tags\Ribbit_svnPre\res\values-v14\
+* tags\Ribbit_svnPre\res\values-v14\desktop.ini
+* tags\Ribbit_svnPre\res\values-v14\styles.xml
+* tags\Ribbit_svnPre\res\values-w820dp\
+* tags\Ribbit_svnPre\res\values-w820dp\desktop.ini
+* tags\Ribbit_svnPre\res\values-w820dp\dimens.xml
+* tags\Ribbit_svnPre\res\values\
+* tags\Ribbit_svnPre\res\values\attrs.xml
+* tags\Ribbit_svnPre\res\values\colors.xml
+* tags\Ribbit_svnPre\res\values\desktop.ini
+* tags\Ribbit_svnPre\res\values\dimens.xml
+* tags\Ribbit_svnPre\res\values\strings.xml
+* tags\Ribbit_svnPre\res\values\styles.xml
+* tags\Ribbit_svnPre\src\
+* tags\Ribbit_svnPre\src\com\
+* tags\Ribbit_svnPre\src\com\desktop.ini
+* tags\Ribbit_svnPre\src\com\nalband\
+* tags\Ribbit_svnPre\src\com\nalband\desktop.ini
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\RibbitApplication.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\UserDetailsActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\adapters\
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\adapters\MessageAdapter.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\adapters\SectionsPagerAdapter.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\adapters\desktop.ini
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\desktop.ini
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\EditFriendsActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\FriendsFragment.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\InboxFragment.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\IntroActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\LoginActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\MainActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\NativeLoginActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\NotificaitonViewActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\PeapsFragment.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\RecipientsActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\SignupActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\ViewImageActivity.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\ui\desktop.ini
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\util\
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\util\AlarmReceiver.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\util\NotificationActionReceiver.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\util\SystemUiHider.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\util\SystemUiHiderBase.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\util\SystemUiHiderHoneycomb.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\util\desktop.ini
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\utils\
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\utils\FileHelper.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\utils\GlobalConstants.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\utils\ImageResizer.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\utils\ParseConstants.java
+* tags\Ribbit_svnPre\src\com\nalband\ribbit\utils\desktop.ini
+* tags\Ribbit_svnPre\src\desktop.ini
+* tags\Ribbit_svnPre\tags\
+* tags\Ribbit_svnPre\tags\desktop.ini
+* tags\Ribbit_svnPre\trunk\
+* tags\Ribbit_svnPre\trunk\desktop.ini
+* tags\desktop.ini
+* trunk\
+* trunk\desktop.ini
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In FacebookSDK:
+* AndroidManifest.xml => facebookSDK\src\main\AndroidManifest.xml
+* assets\ => facebookSDK\src\main\assets\
+* libs\bolts-android-1.1.2.jar => facebookSDK\libs\bolts-android-1.1.2.jar
+* res\ => facebookSDK\src\main\res\
+* src\ => facebookSDK\src\main\java\
+In Ribbit:
+* AndroidManifest.xml => ribbit\src\main\AndroidManifest.xml
+* assets\ => ribbit\src\main\assets\
+* libs\android-support-v13.jar => ribbit\libs\android-support-v13.jar
+* libs\commons-io-2.4.jar => ribbit\libs\commons-io-2.4.jar
+* libs\Parse-1.5.1.jar => ribbit\libs\Parse-1.5.1.jar
+* libs\picasso-2.3.3.jar => ribbit\libs\picasso-2.3.3.jar
+* res\ => ribbit\src\main\res\
+* src\ => ribbit\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
