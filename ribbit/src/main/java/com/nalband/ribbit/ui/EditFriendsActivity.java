@@ -1,20 +1,15 @@
 package com.nalband.ribbit.ui;
 
-import java.util.List;
-
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.nalband.ribbit.R;
-import com.nalband.ribbit.R.layout;
-import com.nalband.ribbit.R.string;
 import com.nalband.ribbit.utils.ParseConstants;
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -23,6 +18,8 @@ import com.parse.ParseRelation;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
+import java.util.List;
+
 public class EditFriendsActivity extends ListActivity {
 
 	public static final String TAG = EditFriendsActivity.class.getSimpleName();
@@ -30,7 +27,7 @@ public class EditFriendsActivity extends ListActivity {
 	protected List<ParseUser> mUsers;
 	protected ParseRelation<ParseUser> mFriendsRelation;
 	protected ParseUser mCurrentUser;
-	
+	//some changes
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
